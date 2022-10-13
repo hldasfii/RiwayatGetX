@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:getx_riwayat/screens/getx_riwayat.dart';
 part 'app_routes.dart';
 
 class AppPages {
