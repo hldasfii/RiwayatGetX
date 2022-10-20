@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_riwayat/controllers/riwayat_controller.dart';
 import 'package:getx_riwayat/models/riwayat_model.dart';
+import 'package:jiffy/jiffy.dart';
 
 
 class RiwayatCard extends StatelessWidget {
@@ -65,7 +66,20 @@ class RiwayatCard extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          '${iniRiwayat?.tanggalPinjam}, ${iniRiwayat?.tanggalKembali} ',
+                          '${iniRiwayat?.tanggalPinjam}',
+                          style: TextStyle(fontSize: 15),
+                          textAlign: TextAlign.start,
+                          overflow: TextOverflow.ellipsis,
+                          
+                        ) ,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          '${iniRiwayat?.tanggalKembali}',
                           style: TextStyle(fontSize: 15),
                           textAlign: TextAlign.start,
                           overflow: TextOverflow.ellipsis,
