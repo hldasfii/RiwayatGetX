@@ -3,7 +3,7 @@ class History {
   String? judulBuku;
   String? namaPenerbit;
   String? namaPengarang;
-  String? tanggalPinjam;
+  DateTime? tanggalPinjam;
   String? tanggalKembali;
   String? tanggalKembaliRiil;
 
@@ -15,9 +15,9 @@ class History {
     judulBuku = json['JudulBuku'];
     namaPenerbit = json['NamaPenerbit'];
     namaPengarang = json['NamaPengarang'];
-    tanggalPinjam = json['TanggalPinjam'];
+    tanggalPinjam = DateTime.parse(json['TanggalPinjam']);
     tanggalKembali = json['TanggalKembali'];
-    tanggalKembaliRiil = json['TanggalKembaliRiil'];
+    tanggalKembaliRiil = (json['TanggalKembaliRiil']);
 
   }
 }

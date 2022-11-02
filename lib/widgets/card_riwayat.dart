@@ -66,7 +66,7 @@ class RiwayatCard extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          '${iniRiwayat?.tanggalPinjam}',
+                          'Tanggal Pinjam: ${Jiffy(iniRiwayat?.tanggalPinjam).yMMMEdjm}',
                           style: TextStyle(fontSize: 15),
                           textAlign: TextAlign.start,
                           overflow: TextOverflow.ellipsis,
@@ -79,7 +79,7 @@ class RiwayatCard extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          '${iniRiwayat?.tanggalKembali}',
+                          'Tanggal Kembali: ${Jiffy(iniRiwayat?.tanggalKembali).yMMMEdjm}',
                           style: TextStyle(fontSize: 15),
                           textAlign: TextAlign.start,
                           overflow: TextOverflow.ellipsis,
